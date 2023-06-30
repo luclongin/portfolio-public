@@ -1,0 +1,55 @@
+.password-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: 60px;
+    width: 100%;
+    margin: 10px 0 40px 0;
+}
+
+#password-input {
+    height: 50px;
+    width: 200px;
+    background-color: #efefef;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    color: black;
+}
+
+#submit-password {
+    height: 55px;
+    width: 60px;
+    margin-left: 8px;
+    background-color: #FFDD00;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #696969;
+    opacity: 1; /* Firefox */
+  }
+
+#submit-password:hover {
+    background-color: #e6c700!important;
+}
+
+#password-error-msg {
+    margin: 4px 0 0 0 ;
+    padding: 0;
+    width: '100%';
+    color: red;
+}
+
+.hidden {
+    display: none;
+}

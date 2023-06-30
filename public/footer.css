@@ -1,0 +1,150 @@
+
+/*NEXT PROJECT FOOTER*/
+
+.next-project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+.next-project {
+    width: fit-content;
+    margin-right: 76px;
+}
+
+.next-project-content {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.next-project-title {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: right;
+}
+
+.next-project-title-hidden {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: right;
+    display: none;
+}
+
+.next-project-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.next-project-img {
+    width: 8vw;
+}
+
+.next-project-name {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    margin: 12px 0;
+}
+
+.next-project-button {
+    text-decoration: none;
+    background-color: #FFDD00;
+    color: inherit;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    width: fit-content;
+    position: relative;
+    z-index: 10;
+}
+
+.next-project-button:hover {
+    background-color: #e6c700!important;
+}
+
+.wip {
+    background-color: #d9d9d9;
+    cursor: default;
+    margin-bottom: 0;
+}
+
+.wip:hover {
+    background-color: #d9d9d9!important;
+}
+
+.left-project {
+    margin-left: 10vw;
+}
+
+.left {
+    text-align: left;
+}
+
+.left-content {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+@media screen and (max-width: 900px) {
+    .left-project {
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hide-when-small {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .next-project-title-hidden {
+        display: block!important;
+    }
+
+    .hide-when-small {
+        display: none!important;
+    }
+
+    .left-project {
+        margin-right: 0;
+    }
+}
+
+.footer-rights {
+    margin-left: 10vw;
+    margin-bottom: 6vh;
+}
+
+.row-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.index-footer-container {
+    margin-left: 60px;
+    margin-bottom: 6vh;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .index-footer-container {
+        margin-left: 32px;
+    }
+}

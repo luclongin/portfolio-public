@@ -1,0 +1,206 @@
+.view-prototype {
+    margin: 8vh 0;
+}
+
+.view-prototype-btn {
+    border: 1px solid #e149fa;
+    background-color: #e149fa;
+    padding: 20px 32px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+
+.view-prototype-btn:hover {
+    background-color: #b13882;
+    border: 1px solid #b13882;
+    color: #ffffff;
+}
+
+.demo-tooltip {
+    position: relative;
+}
+
+.demo-tooltip-text {
+    visibility: hidden;
+    width: 80%;
+    padding: 8px 0;
+    background-color: #2f4858;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    top: 8px;
+    left: 102%; 
+    z-index: 100;
+    font-size: 16px;
+}
+
+.demo-tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #2f4858 transparent transparent;
+}
+
+.demo-tooltip:hover .demo-tooltip-text {
+    visibility: visible;
+}
+
+.current-process-img {
+    width: 100%;
+}
+
+.context-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 30px 0;
+}
+
+.ideation-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 30px 0;
+}
+
+.ideation-img-container  {
+    margin: 0;
+}
+
+.context-img {
+    width: 50%;
+    margin: 4vh 30px 0 0;
+}
+
+.pb-list {
+    margin-bottom: 0;
+}
+
+.pb-list li {
+    margin-bottom: 4vh!important;
+}
+
+.pb-sitemap-img {
+    width: 75%;
+    margin: 4vh 0 0;
+}
+
+.context-process-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.context-process-img {
+    width: 85%;
+    margin: 6vh 0;
+}
+
+.products-img {
+    width: 100%;
+    margin: 10vh 0;
+}
+
+.pb-wireframes-container {
+    margin: 30px 0 0;
+}
+
+.pb-wireframe-img {
+    width: 100%;
+}
+
+.final-img-container {
+    margin: 20px 0;
+}
+
+.final-img {
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+
+/*#########################################
+###########################################
+############################################*/
+
+@media screen and (max-width: 1536px) {
+    .content-subcontainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 70%;
+        margin-left: 10vw;
+    }
+    
+    .pb-sitemap-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        width: 80%;
+        margin-left: 10vw;
+    }
+
+    .content-subcontainer {
+        width: 85%;
+    }
+
+    .products-img, .pb-sitemap-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .context-process-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .context {
+        width: 100%;
+    }
+
+    .content-subcontainer {
+        width: 90%;
+    }
+
+    .demo-tooltip-text {
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        margin-left: -40%; /* Use half of the width (120/2 = 60), to center the tooltip */
+    }
+    
+    .demo-tooltip-text::after {
+        content: " ";
+        position: absolute;
+        top: 108%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #2f4858 transparent transparent transparent;
+    }
+}
+
+
+

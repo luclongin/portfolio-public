@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photobox &mdash; Luc Longin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="header.css">        
+        <link rel="stylesheet" href="aqualab.css">      
+        <link rel="stylesheet" href="photobox.css">
+        <link rel="stylesheet" href="footer.css">      
+        <link rel="icon" href="images/index/logo.png" type="image/icon type">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="links">
+                <a href="https://luclongin.com/#home" id="home-link">Home</a>
+                <a href="https://luclongin.com/#work" class="nav-selected" id="work-link">Work</a>
+                <a href="https://luclongin.com/#about" id="about-link">About</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1 class="content-title">Photobox website</h1>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Problem</h2>
+                    <p class="normal">
+                        All Photobox orders are made through <a href="https://www.instagram.com/photobox.peru/?hl=en">their social media</a>, making it time-consuming for both the owner and the customers.
+                    </p>
+                </div>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Solution</h2>
+                    <p class="normal">
+                        An e-commerce website where users can view and buy products &mdash; and where the owner can view placed orders.  
+                    </p>
+                </div> 
+                <div class="view-prototype">
+                    <a onclick="window.open('https://luclongin.github.io/')" class="view-prototype-btn demo-tooltip">
+                        Play with demo
+                        <span class="demo-tooltip-text">
+                            Available for laptop<br />& desktop screens
+                        </span>
+                    </a>
+                </div> 
+                <div class="header-image">
+                    <img src="images/photobox/photobox_cover.png" />
+                </div>
+                
+                
+                <!--<div class="project-description">
+                    <p class="project-description-tag">Project:</p>
+                    <p class="project-description-value">Paid freelance work</p>
+                </div>
+                <div class="project-description">
+                    <p class="project-description-tag">Methods:</p>
+                    <p class="project-description-value">User Research, Customer interviews, Competitive Analysis, Wireframing, Prototyping, Usability Testing, Design Propositions</p>
+                </div>
+                <div class="project-description">
+                    <p class="project-description-tag">Tools:</p>
+                    <p class="project-description-value">Figma, Figjam, React, Redux, Node.js, MySQL</p>
+                </div>
+                <div class="project-description">
+                    <p class="project-description-tag">Duration:</p>
+                    <p class="project-description-value">9 weeks, from March 2023 to May 2023</p>
+                </div>-->
+                
+                
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Context</h2>
+                    <p class="normal">
+                        Photobox sells <span class="strong">printed framed pictures</span> that <span class="strong">stick</span> to walls and leave <span class="strong">no wall damage</span>.
+                    </p>
+                    <div class="context-img-container">
+                        <img src="images/photobox/context-1.jpg" class="context-img" />
+                        <img src="images/photobox/context-2.jpg" class="context-img" />
+                    </div>
+                    <p class="normal">
+                        The current customer shopping experience ressembles this:
+                    </p>
+                    <div class="context-process-img-container">
+                        <img src="images/photobox/context.png" class="context-process-img" />
+                    </div>
+                    <p class="normal">
+                        The owner reached out to me to design and build Photobox's e-commerce website.
+                    </p>
+                </div>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Research</h2>
+                    <p class="normal">
+                        I made calls to understand why they thought they needed a website. I also interviewed 5 existing customers to identify any pain points. Here are some high-level findings:
+                    </p>
+                    <ul class="aqualab-list pb-list">
+                        <li> 
+                            &#8987; <span class="strong">For the owner, the ordering process is too time-consuming</span>.
+                        </li>
+                        <li>
+                            &#128200; <span class="strong">It is difficult to convert leads into sales. </span>Only 1 in 9 people who send a direct message end up buying something.
+                        </li>
+                        <li>
+                            &#128081; <span class="strong">Most customers value the tailored shopping experience.</span> Direct messages through social media for Q&A builds trust.
+                        </li>
+                        <li>
+                            &#128444; <span class="strong">The owner edits and crops customers' photos for the best results.</span> Most customers would prefer to be shown a preview of the finished product before buying.
+                        </li>
+                    </ul>
+                    <p class="normal">
+                        Photobox's <span class="strong">main customer base is mothers with a desire to decorate their houses in a clean and practical way.</span>
+                    </p>
+                    <p class="normal">
+                       
+                    <br />
+                    Photobox only has 1 <span class="strong">direct competitor</span> in the country, Wolpic, who sell their frames only through their <a href="https://wolpic.com">website</a>.
+                    </p>
+                </div>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Ideation</h2>
+                    <p class="normal">
+                        Firstly, it was necessary to narrow down our scope and focus on deploying a <span class="strong">first version</span> of the website. The two main requirements were:
+                        <ul class="aqualab-list">
+                            <li>
+                                <p class="normal">
+                                    <span class="strong">The customer can complete an order.</span> Customer can select a product, upload photos, preview and crop photos, add delivery information and pay.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal strong">
+                                    The owner can view all order summaries and uploaded photos.
+                                </p>
+                            </li>
+                        </ul> 
+                    </p>
+                    <p class="normal">
+                        To compete with Wolpic's Wordpress website, we wanted a dynamic and simple first version. We decided to only sell the <span class="strong">3 most popular products</span>:
+                        <img src="images/photobox/3products.png" class="products-img" />
+                    </p>
+                    <p class="normal">
+                        For the owner to view all orders, we opted for a <span class="strong">private admin page</span> where the all order summaries and photos would be listed. 
+                    </p>
+                    <p class="normal">
+                        <br />
+                        After a brainstorming session with my client, we ended up with the following process.
+                    </p>
+                    <div class="ideation-img-container">
+                        <img src="images/photobox/sitemap.png" class="pb-sitemap-img" />
+                    </div>
+                </div>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Prototyping</h2>
+                    <p class="normal">
+                        I started testing a low-fi prototype on the owner to be sure to reveal any major blockers. Hi-fi prototypes were then tested on past customers and potential future customers.
+                    </p>
+                    <div class="pb-wireframes-container">
+                        <img src="images/photobox/wireframes.png" class="pb-wireframe-img" />
+                    </div>
+                    <p class="normal">
+                        The first two rounds of test and iteration fared quite well, with slight modifications each round. The main visual change was to the photo previewing page as seen below.
+                    </p>
+                    <div class="pb-wireframes-container">
+                        <img src="images/photobox/iteration-change1.png" class="pb-wireframe-img" />
+                    </div>
+                </div>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">Tech stack</h2>
+                    <p class="normal">
+                        Before going forward, I researched and defined the required set of technologies for the project.
+                    </p>
+                    <ul class="aqualab-list">
+                        <li>
+                            <p class="normal">
+                                <span class="strong">
+                                    Front-end: 
+                                </span>
+                                JavaScript using the React framework, along with external libraries to upload and handle images.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="normal">
+                                <span class="strong">
+                                    Back-end: 
+                                </span>
+                                a basic CRUD system with Express and a MySQL database.
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="normal">
+                        However, I realized that handling card payment using popular international frameworks would end up costing my client too much in fees. <br /><br />I chose to incorporate the <span class="strong"><a href="https://www.mercadopago.com.pe/developers/es">MercadoPago API</a></span> for card payment and
+                        modified the prototype to account for the MercadoPago popup.
+                    </p>
+                    <div class="pb-wireframes-container">
+                        <img src="images/photobox/iteration-change2.png" class="pb-wireframe-img" />
+                    </div>
+                </div>
+                <div class="final-content-subcontainer">
+                    <h2 class="content-header">Final solution</h2>
+                    <div class="final-img-container">
+                        <img class="final-img" src="images/photobox/final-1.png"/>
+                        <img class="final-img" src="images/photobox/final-2.png"/>
+                        <img class="final-img" src="images/photobox/final-6.png"/>
+                        <img class="final-img" src="images/photobox/final-3.png"/>
+                        <img class="final-img" src="images/photobox/final-4.png"/>
+                        <img class="final-img" src="images/photobox/final-5.png"/>
+                    </div>
+                </div>
+                <div class="content-subcontainer">
+                    <h2 class="content-header">What's next?</h2>
+                    <p class="normal">
+                        There are about 2 months left of work for version 1 to be ready. However we've decided to pause development for now. 
+                    </p>
+                    <p class="normal">
+                        In the meantime, the source code can be found in my <a target="_blank" href="https://github.com/luclongin/photobox-peru">Github</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="next-project-container">
+                <div class="next-project left-project">
+                    <p class="next-project-title left">
+                        Previously
+                    </p>
+                    <div class="next-project-content left-content">
+                        <p class="next-project-name left">
+                            Chacos Mall app
+                        </p>
+                        <a class="next-project-button" href="hidden.html">&#8592; View project </a>
+                    </div>
+                </div>
+                <div class="next-project hide-when-small">
+                    <p class="next-project-title hide-when-small">
+                        Up next
+                    </p>
+                    <p class="next-project-title-hidden">
+                        Next
+                    </p>
+                    <div class="next-project-content">
+                        <p class="next-project-name">
+                            Aqualab app
+                        </p>
+                        <a class="next-project-button" href="aqualab.html">View project &#8594;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-subcontainer">
+                <p class="footer-rights">
+                    Designed and built by Luc Longin<br />&#169; 2023
+                </p>
+            </div>
+        </div>
+        <script src="header.js"></script>
+    </body>
+</html>

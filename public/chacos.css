@@ -1,0 +1,38 @@
+.sketch-img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.content {
+    margin-left: 10vw;
+}
+
+.img-container {
+    display: grid;
+    margin: 40px 0;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.chacos-img {
+    width: 100%;
+}
+
+.development {
+    margin-bottom: 40px;
+}
+
+.image-label {
+    font-size: 16px;
+    margin: 0;
+    color: #696969;
+}
+
+.image-label a {
+    text-decoration: none;
+}
+
+.chacos-ol {
+    margin-top: 20px;
+}
